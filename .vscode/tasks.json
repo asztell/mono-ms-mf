@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "dev",
+			"path": "api-doc-center",
+			"problemMatcher": [],
+			"label": "npm: dev - api-doc-center",
+			"detail": "nodemon --exec node --loader ts-node/esm ./index.ts"
+		},
+		{
+			"type": "npm",
+			"script": "dev",
+			"path": "ui",
+			"problemMatcher": [],
+			"label": "npm: dev - ui",
+			"detail": "vite"
+		},
+		{
+			"type": "npm",
+			"script": "_dev",
+			"path": "api-doc-center",
+			"problemMatcher": [],
+			"label": "npm: _dev - api-doc-center",
+			"detail": "node --import ./ts-loader.js ./index.ts"
+		}
+	]
+}
